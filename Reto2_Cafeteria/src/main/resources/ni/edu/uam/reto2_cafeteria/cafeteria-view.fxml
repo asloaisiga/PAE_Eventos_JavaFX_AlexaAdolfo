@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="427.0"
+      prefWidth="410.0"
+      spacing="15.0"
+      xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.LotesController">
+
+    <children>
+
+        <!-- Título -->
+        <Label text="Recepción de café"
+               textFill="#6e3434">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <!-- Botón -->
+        <Button mnemonicParsing="false"
+                text="Agregar Lote"
+                onAction="#agregarLote" />
+
+        <!-- Tabla -->
+        <TableView fx:id="tbPoductor"
+                   editable="true"
+                   prefHeight="220.0"
+                   prefWidth="370.0"
+                   onMouseClicked="#mostrarDetalles">
+
+            <columns>
+
+                <TableColumn fx:id="tbProducer"
+                             prefWidth="120.0"
+                             text="Productor" />
+
+                <TableColumn fx:id="tbLot"
+                             prefWidth="110.0"
+                             text="Lote" />
+
+                <TableColumn fx:id="tbCantidad"
+                             prefWidth="120.0"
+                             text="Cantidad" />
+
+            </columns>
+
+            <!-- Menú clic derecho -->
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+
+                        <MenuItem text="Editar"
+                                  onAction="#editarLote" />
+
+                        <MenuItem text="Eliminar"
+                                  onAction="#eliminarLote" />
+
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+
+        </TableView>
+
+        <!-- Detalles -->
+        <Label text="Detalles del lote">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+
+        <HBox spacing="10.0">
+            <children>
+                <Label text="Productor:" />
+                <Label fx:id="lblProductor" text="-" />
+            </children>
+        </HBox>
+
+        <HBox spacing="10.0">
+            <children>
+                <Label text="Lote:" />
+                <Label fx:id="lblLote" text="-" />
+
+                <Label text="Cantidad:" />
+                <Label fx:id="lblCantidad" text="-" />
+            </children>
+        </HBox>
+
+    </children>
+
+    <padding>
+        <Insets bottom="20.0"
+                left="20.0"
+                right="20.0"
+                top="20.0" />
+    </padding>
+
+</VBox>
