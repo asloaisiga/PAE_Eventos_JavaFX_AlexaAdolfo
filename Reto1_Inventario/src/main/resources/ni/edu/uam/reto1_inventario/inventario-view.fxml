@@ -20,9 +20,9 @@
       <TextField fx:id="txtCantidad" layoutX="25.0" layoutY="117.0" promptText="3" />
       <Label layoutX="25.0" layoutY="153.0" text="Precio Unitario:" />
       <TextField fx:id="txtPrice" layoutX="25.0" layoutY="181.0" promptText="23.50" />
-      <Button fx:id="btnAdd" alignment="CENTER" mnemonicParsing="false" text="Agregar" />
+      <Button fx:id="btnAdd" alignment="CENTER" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar" />
       <Label text="Buscar producto por código:" />
-      <TextField fx:id="txtBuscar" prefHeight="26.0" prefWidth="241.0" promptText="0021" />
+      <TextField fx:id="txtBuscar" prefHeight="26.0" prefWidth="241.0" onKeyPressed="#buscarProducto" promptText="0021" />
       <Label text="Presione ENTER para continuar" textFill="#ea0a0a">
          <font>
             <Font name="System Bold" size="12.0" />
