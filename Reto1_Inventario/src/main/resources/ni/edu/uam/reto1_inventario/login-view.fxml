@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="423.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.registro_app.controllers.LoginController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="423.0" spacing="15.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ni.edu.uam.reto1_inventario.controllers.LoginController">
     <children>
       <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -28,7 +28,7 @@
                 <Font name="Bell MT" size="13.0" />
             </font></Label>
         <PasswordField fx:id="txtPassword" alignment="TOP_CENTER" />
-      <Button fx:id="btnEnter" mnemonicParsing="false" text="Entrar" textFill="#2544df">
+      <Button fx:id="btnEnter" mnemonicParsing="false" text="Entrar" textFill="#2544df"  onAction="#loginButtonAction">
          <font>
             <Font name="Bell MT" size="14.0" />
          </font></Button>
