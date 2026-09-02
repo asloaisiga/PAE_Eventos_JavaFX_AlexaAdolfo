@@ -1,14 +1,14 @@
 # PAE_Eventos_JavaFX_AlexaAdolfo
 # Retos de Programación con JavaFX
 
-Proyecto desarrollado como parte de la asignatura de programación, compuesto por tres aplicaciones realizadas con JavaFX.
+Proyecto desarrollado como parte de la asignatura de programación de aplicaciones de escritorio, compuesto por tres aplicaciones realizadas con JavaFX.
 
 El objetivo de los retos es aplicar diferentes componentes, eventos y controles de JavaFX mediante situaciones prácticas.
 
 ## Integrantes
 
 - Alexa Sofia Loaisiga Torrez
-- Adolfo Carlos Ramirez Arauz
+- Adolfo Carlos Ramírez Aráuz
 
 ---
 
