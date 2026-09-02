@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuButton mnemonicParsing="false" text="Menu Principal">
+        <items>
+          <MenuItem fx:id="itmCatalogo" mnemonicParsing="false" text="Catálogo" />
+          <MenuItem fx:id="itmVentas" mnemonicParsing="false" text="Ventas" />
+            <MenuItem fx:id="itmAyuda" mnemonicParsing="false" text="Ayuda" />
+        </items>
+      </MenuButton>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button fx:id="btnNuevo" mnemonicParsing="false" text="Nuevo" />
+            <Button fx:id="btnGuardar" mnemonicParsing="false" text="Guardar" />
+            <Button fx:id="btnSearch" mnemonicParsing="false" text="Buscar" />
+        </items>
+      </ToolBar>
+      <HBox prefHeight="617.0" prefWidth="763.0">
+         <children>
+            <VBox prefHeight="502.0" prefWidth="326.0" spacing="5.0">
+               <children>
+                  <ImageView fx:id="imgPrevia" fitHeight="201.0" fitWidth="299.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label text="Datos del producto: " textFill="#f514d1">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font></Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="Código:" textFill="#f514d1" />
+                  <TextField fx:id="txtCodigo" />
+                  <Label text="Nombre:" textFill="#f514d1" />
+                  <TextField fx:id="txtNombre" layoutX="10.0" layoutY="45.0" />
+                  <Label layoutX="10.0" layoutY="71.0" text="Tipo:" textFill="#f514d1" />
+                  <ComboBox fx:id="cbTipo" prefWidth="150.0" />
+                  <Label text="Precio:" textFill="#f514d1" />
+                  <TextField fx:id="txtPrecio" layoutX="10.0" layoutY="88.0" />
+                  <Button fx:id="btnImagen" mnemonicParsing="false" text="Imagen" textFill="#f514d1">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font></Button>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="502.0" prefWidth="449.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="319.0" text="Catálogo de artesanías" textFill="#f514d1" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="Century Schoolbook Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" text="Buscar:" />
+                        <TextField fx:id="txtBuscar" prefHeight="26.0" prefWidth="297.0" />
+                        <Button fx:id="btnBuscar" mnemonicParsing="false" text="Buscar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <TableView fx:id="tbProductos" prefHeight="326.0" prefWidth="415.0">
+                    <columns>
+                      <TableColumn fx:id="colImagen" prefWidth="75.0" text="Imagen" />
+                      <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+                        <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="colTipo" prefWidth="75.0" text="Tipo" />
+                        <TableColumn fx:id="colPrecio" prefWidth="75.0" text="Precio" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
